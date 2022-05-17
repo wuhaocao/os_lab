@@ -1,0 +1,1 @@
+cmd_/home/hhxx/os_lab/lab1/hello.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/hhxx/os_lab/lab1/hello.ko /home/hhxx/os_lab/lab1/hello.o /home/hhxx/os_lab/lab1/hello.mod.o ;  true
