@@ -1,8 +1,9 @@
-cmd_/home/hhxx/os_lab/lab1/list/listOfName.o := gcc -Wp,-MD,/home/hhxx/os_lab/lab1/list/.listOfName.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include -I./arch/x86/include -I./arch/x86/include/generated/uapi -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -DCC_HAVE_ASM_GOTO  -DMODULE  -DKBUILD_BASENAME='"listOfName"'  -DKBUILD_MODNAME='"listOfName"' -c -o /home/hhxx/os_lab/lab1/list/listOfName.o /home/hhxx/os_lab/lab1/list/listOfName.c
+cmd_/home/hhxx/os_lab/lab4/charDevDriver.o := gcc -Wp,-MD,/home/hhxx/os_lab/lab4/.charDevDriver.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include -I./arch/x86/include -I./arch/x86/include/generated/uapi -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -DCC_HAVE_ASM_GOTO  -DMODULE  -DKBUILD_BASENAME='"charDevDriver"'  -DKBUILD_MODNAME='"charMsgModule"' -c -o /home/hhxx/os_lab/lab4/charDevDriver.o /home/hhxx/os_lab/lab4/charDevDriver.c
 
-source_/home/hhxx/os_lab/lab1/list/listOfName.o := /home/hhxx/os_lab/lab1/list/listOfName.c
+source_/home/hhxx/os_lab/lab4/charDevDriver.o := /home/hhxx/os_lab/lab4/charDevDriver.c
 
-deps_/home/hhxx/os_lab/lab1/list/listOfName.o := \
+deps_/home/hhxx/os_lab/lab4/charDevDriver.o := \
+  /home/hhxx/os_lab/lab4/charDevDriver.h \
   include/linux/init.h \
     $(wildcard include/config/debug/rodata.h) \
     $(wildcard include/config/debug/set/module/ronx.h) \
@@ -609,16 +610,88 @@ deps_/home/hhxx/os_lab/lab1/list/listOfName.o := \
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
-  include/linux/slab.h \
-    $(wildcard include/config/debug/slab.h) \
-    $(wildcard include/config/failslab.h) \
+  include/linux/device.h \
+    $(wildcard include/config/debug/devres.h) \
+    $(wildcard include/config/srcu.h) \
+    $(wildcard include/config/generic/msi/irq/domain.h) \
+    $(wildcard include/config/pinctrl.h) \
+    $(wildcard include/config/generic/msi/irq.h) \
+    $(wildcard include/config/dma/cma.h) \
+    $(wildcard include/config/of.h) \
+    $(wildcard include/config/devtmpfs.h) \
+    $(wildcard include/config/sysfs/deprecated.h) \
+  include/linux/klist.h \
+  include/linux/pinctrl/devinfo.h \
+  include/linux/pinctrl/consumer.h \
+  include/linux/seq_file.h \
+  include/linux/fs.h \
+    $(wildcard include/config/fs/posix/acl.h) \
+    $(wildcard include/config/security.h) \
+    $(wildcard include/config/cgroup/writeback.h) \
+    $(wildcard include/config/ima.h) \
+    $(wildcard include/config/fsnotify.h) \
+    $(wildcard include/config/fs/encryption.h) \
+    $(wildcard include/config/epoll.h) \
+    $(wildcard include/config/file/locking.h) \
+    $(wildcard include/config/quota.h) \
+    $(wildcard include/config/fs/dax.h) \
+    $(wildcard include/config/mandatory/file/locking.h) \
+    $(wildcard include/config/block.h) \
+    $(wildcard include/config/migration.h) \
+  include/linux/kdev_t.h \
+  include/uapi/linux/kdev_t.h \
+  include/linux/dcache.h \
+  include/linux/rculist.h \
+  include/linux/rculist_bl.h \
+  include/linux/list_bl.h \
+  include/linux/bit_spinlock.h \
+  include/linux/lockref.h \
+    $(wildcard include/config/arch/use/cmpxchg/lockref.h) \
+  include/linux/stringhash.h \
+    $(wildcard include/config/dcache/word/access.h) \
+  include/linux/hash.h \
+    $(wildcard include/config/have/arch/hash.h) \
+  include/linux/path.h \
+  include/linux/list_lru.h \
     $(wildcard include/config/slob.h) \
-    $(wildcard include/config/have/hardened/usercopy/allocator.h) \
-    $(wildcard include/config/slab.h) \
-    $(wildcard include/config/slub.h) \
-  include/linux/kmemleak.h \
-    $(wildcard include/config/debug/kmemleak.h) \
-  include/linux/kasan.h \
+  include/linux/shrinker.h \
+  include/linux/radix-tree.h \
+    $(wildcard include/config/radix/tree/multiorder.h) \
+  include/linux/pid.h \
+  include/linux/capability.h \
+  include/uapi/linux/capability.h \
+  include/linux/semaphore.h \
+  include/uapi/linux/fiemap.h \
+  include/linux/migrate_mode.h \
+  include/linux/percpu-rwsem.h \
+  include/linux/rcu_sync.h \
+  include/linux/delayed_call.h \
+  include/uapi/linux/fs.h \
+  include/uapi/linux/limits.h \
+  include/linux/quota.h \
+    $(wildcard include/config/quota/netlink/interface.h) \
+  include/linux/percpu_counter.h \
+  include/uapi/linux/dqblk_xfs.h \
+  include/linux/dqblk_v1.h \
+  include/linux/dqblk_v2.h \
+  include/linux/dqblk_qtree.h \
+  include/linux/projid.h \
+  include/uapi/linux/quota.h \
+  include/linux/nfs_fs_i.h \
+  include/linux/fcntl.h \
+  include/uapi/linux/fcntl.h \
+  arch/x86/include/uapi/asm/fcntl.h \
+  include/uapi/asm-generic/fcntl.h \
+  include/linux/cred.h \
+    $(wildcard include/config/debug/credentials.h) \
+    $(wildcard include/config/keys.h) \
+  include/linux/key.h \
+  include/linux/assoc_array.h \
+    $(wildcard include/config/associative/array.h) \
+  include/linux/selinux.h \
+    $(wildcard include/config/security/selinux.h) \
+  include/linux/pinctrl/pinctrl-state.h \
+  include/linux/ratelimit.h \
   include/linux/sched.h \
     $(wildcard include/config/sched/debug.h) \
     $(wildcard include/config/lockup/detector.h) \
@@ -631,9 +704,7 @@ deps_/home/hhxx/os_lab/lab1/list/listOfName.o := \
     $(wildcard include/config/audit.h) \
     $(wildcard include/config/inotify/user.h) \
     $(wildcard include/config/fanotify.h) \
-    $(wildcard include/config/epoll.h) \
     $(wildcard include/config/posix/mqueue.h) \
-    $(wildcard include/config/keys.h) \
     $(wildcard include/config/perf/events.h) \
     $(wildcard include/config/bpf/syscall.h) \
     $(wildcard include/config/sched/info.h) \
@@ -651,7 +722,6 @@ deps_/home/hhxx/os_lab/lab1/list/listOfName.o := \
     $(wildcard include/config/auditsyscall.h) \
     $(wildcard include/config/rt/mutexes.h) \
     $(wildcard include/config/ubsan.h) \
-    $(wildcard include/config/block.h) \
     $(wildcard include/config/task/xacct.h) \
     $(wildcard include/config/cpusets.h) \
     $(wildcard include/config/cgroups.h) \
@@ -673,8 +743,6 @@ deps_/home/hhxx/os_lab/lab1/list/listOfName.o := \
     $(wildcard include/config/cpu/freq.h) \
   include/uapi/linux/sched.h \
   include/linux/sched/prio.h \
-  include/linux/capability.h \
-  include/uapi/linux/capability.h \
   include/linux/plist.h \
     $(wildcard include/config/debug/pi/list.h) \
   include/linux/cputime.h \
@@ -703,7 +771,6 @@ deps_/home/hhxx/os_lab/lab1/list/listOfName.o := \
   arch/x86/include/uapi/asm/siginfo.h \
   include/asm-generic/siginfo.h \
   include/uapi/asm-generic/siginfo.h \
-  include/linux/pid.h \
   include/linux/seccomp.h \
     $(wildcard include/config/seccomp.h) \
     $(wildcard include/config/have/arch/seccomp/filter.h) \
@@ -719,7 +786,6 @@ deps_/home/hhxx/os_lab/lab1/list/listOfName.o := \
   arch/x86/include/generated/asm/unistd_32_ia32.h \
   include/asm-generic/seccomp.h \
   include/uapi/linux/unistd.h \
-  include/linux/rculist.h \
   include/linux/rtmutex.h \
     $(wildcard include/config/debug/rt/mutexes.h) \
   include/linux/resource.h \
@@ -737,21 +803,10 @@ deps_/home/hhxx/os_lab/lab1/list/listOfName.o := \
   include/linux/task_io_accounting.h \
     $(wildcard include/config/task/io/accounting.h) \
   include/linux/latencytop.h \
-  include/linux/cred.h \
-    $(wildcard include/config/debug/credentials.h) \
-    $(wildcard include/config/security.h) \
-  include/linux/key.h \
-  include/linux/assoc_array.h \
-    $(wildcard include/config/associative/array.h) \
-  include/linux/selinux.h \
-    $(wildcard include/config/security/selinux.h) \
   include/uapi/linux/magic.h \
   include/linux/cgroup-defs.h \
     $(wildcard include/config/sock/cgroup/data.h) \
-  include/uapi/linux/limits.h \
   include/linux/percpu-refcount.h \
-  include/linux/percpu-rwsem.h \
-  include/linux/rcu_sync.h \
   include/linux/bpf-cgroup.h \
     $(wildcard include/config/cgroup/bpf.h) \
   include/uapi/linux/bpf.h \
@@ -767,7 +822,21 @@ deps_/home/hhxx/os_lab/lab1/list/listOfName.o := \
     $(wildcard include/config/cgroup/hugetlb.h) \
     $(wildcard include/config/cgroup/pids.h) \
     $(wildcard include/config/cgroup/debug.h) \
+  arch/x86/include/asm/device.h \
+    $(wildcard include/config/x86/dev/dma/ops.h) \
+    $(wildcard include/config/intel/iommu.h) \
+    $(wildcard include/config/amd/iommu.h) \
+    $(wildcard include/config/pci/domains.h) \
+  include/linux/pm_wakeup.h \
+  arch/x86/include/asm/uaccess.h \
+    $(wildcard include/config/x86/intel/usercopy.h) \
+  include/linux/kasan-checks.h \
+  arch/x86/include/asm/smap.h \
+    $(wildcard include/config/x86/smap.h) \
+  arch/x86/include/asm/extable.h \
+  arch/x86/include/asm/uaccess_64.h \
+  /home/hhxx/os_lab/lab4/DriverFileOperation.h \
 
-/home/hhxx/os_lab/lab1/list/listOfName.o: $(deps_/home/hhxx/os_lab/lab1/list/listOfName.o)
+/home/hhxx/os_lab/lab4/charDevDriver.o: $(deps_/home/hhxx/os_lab/lab4/charDevDriver.o)
 
-$(deps_/home/hhxx/os_lab/lab1/list/listOfName.o):
+$(deps_/home/hhxx/os_lab/lab4/charDevDriver.o):

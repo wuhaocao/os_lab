@@ -1,0 +1,1 @@
+cmd_/home/hhxx/os_lab/lab4/charMsgModule.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/hhxx/os_lab/lab4/charMsgModule.ko /home/hhxx/os_lab/lab4/charMsgModule.o /home/hhxx/os_lab/lab4/charMsgModule.mod.o ;  true
